@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formularz</title>
+</head>
+<body>
+    <header>
+        <h1>Formularz - Szydełkowanie</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li>
+                <a href="#">Podstawy</a>
+                <ul>
+                    <li><a href="rodzaje_wloczek.html">Rodzaje Włóczek</a></li>
+                    <li><a href="rodzaje_szydelka.html">Rodzaje Szydełka</a></li>
+                </ul>
+            </li>
+            <li><a href="formularz.html">Formularz</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Formularz</h2>
+            <form action="submit_survey.php" method="post">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+  
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+  
+                <label for="age">Wiek:</label>
+                <input type="number" id="age" name="age" required>
+  
+                <label for="experienceLevel">Twój poziom doświadczenia w szydełkowaniu:</label>
+                <select id="experienceLevel" name="experienceLevel">
+                    <option value="beginner">Początkujący</option>
+                    <option value="intermediate">Średniozaawansowany</option>
+                    <option value="advanced">Zaawansowany</option>
+                </select>
+  
+                <label for="feedback">Dodatkowe uwagi:</label>
+                <textarea id="feedback" name="feedback" rows="4"></textarea>
+  
+                <label>Zaznacz Płeć:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Mężczyzna</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Kobieta</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Inna</label>
+  
+                <label for="favoriteColor">Twój ulubiony kolor włóczki:</label>
+                <input type="color" id="favoriteColor" name="favoriteColor">
+  
+                <label for="agreeTerms">
+                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                    Zgadzam się z regulaminem
+                </label>
+  
+                <input type="submit" value="Wyślij">
+                <input type="reset" value="Wyczyść">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Szydełkowanie-Kamila Becker</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<data>
+    <woolTypes>
+        <woolType id="1" name="Włóczka Akrylowa" composition="100% Akryl" thickness="Średnia" color="Różnorodne" />
+        <woolType id="2" name="Włóczka Wełniana" composition="80% Wełna, 20% Akryl" thickness="Gruba" color="Naturalne odcienie" />
+        <woolType id="3" name="Włóczka Bawełniana" composition="100% Bawełna" thickness="Cienka" color="Pastelowe kolory" />
+    </woolTypes>
+
+    <patterns>
+        <pattern id="101" name="Kaczuchy" category="Pluszaki" difficulty="Łatwy">
+            <description>
+                Żółte kaczuchy, zrobione w prezencie weselnym
+            </description>
+            <image src="Zdjęcia/kaczuszki.jpg" alt="Szydełkowe Kaczuchy" />
+        </pattern>
+        <pattern id="102" name="Kurama" category="Pluszaki" difficulty="Średni">
+            <description>
+                Dziewięcioogoniasty lis z anime Naruto
+            </description>
+            <image src="Zdjęcia/kurama.jpg" alt="Szydełkowa Kurama"/>
+        </pattern>
+        <pattern id="103" name="Chopper" category="Pluszaki" difficulty="Trudny">
+            <description>
+                Łoś z anime OnePiece
+            </description>
+            <image src="Zdjęcia/chopper.jpg" alt="Szydełkowy Chopper" />
+        </pattern>
+        <pattern id="104" name="Kapibara" category="Pluszaki" difficulty="Łatwy">
+            <description>
+                Chillowy warait, największy gryzoń na świecie
+            </description>
+            <image src="Zdjęcia/kapibara.jpg" alt="Szydełkowa Kapibara" />
+        </pattern>
+        <pattern id="105" name="Dinozar" category="Pluszaki" difficulty="Łatwy">
+            <description>
+                Kolory Dinozar
+            </description>
+            <image src="Zdjęcia/dinozar.jpg" alt="Szydełkowy Dinozar" />
+        </pattern>
+    </patterns>
+
+    <resources>
+        <link id="201" title="Poradnik na sam start" url="https://www.youtube.com/watch?v=cfH5sCttH6w" />
+        <link id="202" title="Jak zrobić półsłupek" url="https://www.youtube.com/watch?v=eEcfSYHz_ss" />
+        <link id="203" title="Jak zrobić magiczne kółko" url="https://www.youtube.com/watch?v=eotWCJnQ0Ok" />
+        <link id="203" title="Jak zrobić swojego pierwszego pluszaka" url="https://www.youtube.com/watch?v=WuYl3M-CRQA" />
+    </resources>
+</data>

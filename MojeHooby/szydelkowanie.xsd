@@ -1,0 +1,36 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="woolType">
+    <xs:attribute name="id" type="xs:integer" use="required"/>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="composition" type="xs:string" use="required"/>
+    <xs:attribute name="thickness" type="xs:string" use="required"/>
+    <xs:attribute name="color" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="pattern">
+    <xs:attribute name="id" type="xs:integer" use="required"/>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="category" type="xs:string" use="required"/>
+    <xs:attribute name="difficulty" type="xs:string" use="required"/>
+    <xs:element name="description" type="xs:string"/>
+    <xs:element name="image" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="link">
+    <xs:attribute name="id" type="xs:integer" use="required"/>
+    <xs:attribute name="title" type="xs:string" use="required"/>
+    <xs:attribute name="url" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:element name="data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="woolTypes" type="woolType" maxOccurs="unbounded"/>
+        <xs:element name="patterns" type="pattern" maxOccurs="unbounded"/>
+        <xs:element name="resources" type="link" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
