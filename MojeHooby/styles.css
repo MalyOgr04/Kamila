@@ -182,6 +182,14 @@ footer {
   }
 }
 
+p::first-letter {
+  text-transform: uppercase;
+}
+
+a:active { background: orange; }
+
+a:visited { color: green; }
+
 .transition-box {
   width: 50px;
   height: 50px;
@@ -200,12 +208,17 @@ footer {
   animation: moveAnimation 2s infinite alternate;
 }
 
-#szydelka {
+.szydelka {
   width: 25%;
   height: 25%;
 }
 
-#wloczki {
+.wloczki {
+  width: 25%;
+  height: 25%;
+}
+
+#etykieta {
   width: 25%;
   height: 25%;
 }
